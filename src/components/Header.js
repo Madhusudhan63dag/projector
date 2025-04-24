@@ -14,7 +14,7 @@ const Header = () => {
       setIsScrolled(window.scrollY > 20);
       
       // Update active section based on scroll position
-      const sections = ['hero', 'features', 'specs', 'how-it-works', 'applications', 'testimonials', 'faq'];
+      const sections = ['hero', 'features', 'specs', 'testimonials', 'faq', 'contact'];
       
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -62,9 +62,9 @@ const Header = () => {
   const navLinks = [
     { id: 'features', label: 'Features' },
     { id: 'specs', label: 'Specifications' },
-    { id: 'how-it-works', label: 'How It Works' },
     { id: 'testimonials', label: 'Reviews' },
-    { id: 'faq', label: 'FAQs' }
+    { id: 'faq', label: 'FAQs' },
+    { id: 'contact', label: 'Contact' }
   ];
   
   return (
@@ -74,7 +74,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center group">
-            <img src={logo} className="w-20" />
+            <img src={logo} alt="i&i Logo" className="w-20" />
           </a>
         
           {/* Desktop Navigation */}
@@ -103,7 +103,7 @@ const Header = () => {
               Support
             </a>
             <a 
-              href="#product" 
+              href="#features" 
               className="bg-gradient-to-r from-[#FD5201] to-[#FD5201]/90 hover:from-[#FD5201]/90 hover:to-[#FD5201] text-white font-medium py-2 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
             >
               Order Now
@@ -166,7 +166,7 @@ const Header = () => {
                 </a>
                 <div className="p-4">
                   <a
-                    href="#product"
+                    href="#features"
                     onClick={() => setIsMenuOpen(false)}
                     className="bg-gradient-to-r from-[#FD5201] to-[#FD5201]/90 hover:from-[#FD5201]/90 hover:to-[#FD5201] text-white font-medium py-3 px-4 rounded-lg block text-center shadow-md"
                   >

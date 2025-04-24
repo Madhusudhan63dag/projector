@@ -11,6 +11,7 @@ import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import TermsAndConditions from './components/TermsAndConditions';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import ThankYou from './components/ThankYou';
 
 function HomePage({ handleBuyNow }) {
   return (
@@ -19,10 +20,10 @@ function HomePage({ handleBuyNow }) {
         <Hero />
       </div>
       <div id="features">
-        <Features />
+        <ProductDetails onBuyNow={handleBuyNow} />
       </div>
       <div id="specs">
-        <ProductDetails onBuyNow={handleBuyNow} />
+        <Features />
       </div>
       <div id="testimonials">
         <Testimonials />
@@ -94,6 +95,7 @@ function App() {
                 />
               </div>
             } />
+            <Route path="/thankyou" element={<ThankYou />} />
             <Route path="/" element={
               isCheckoutActive ? 
               <Navigate to="/checkout" /> : 

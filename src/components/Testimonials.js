@@ -20,27 +20,51 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Alex Johnson",
-      role: "Wildlife Photographer",
-      quote: "The 4G connectivity and rugged design of this recorder has transformed my field work. I can stream wildlife footage directly from remote locations.",
+      name: "Emily Parker",
+      role: "Parent & Home Cinema Enthusiast",
+      quote: "My kids absolutely adore the cute dog design, and I'm impressed by the quality. We've created a wonderful movie night tradition with this projector in our backyard.",
       rating: 5,
-      avatar: "AJ"
+      avatar: "EP"
     },
     {
       id: 2,
-      name: "Sarah Chen",
-      role: "Travel Vlogger",
-      quote: "I've used many portable recorders, but none match the battery life and video quality of this one. It's been with me across 15 countries!",
+      name: "David Wong",
+      role: "Digital Nomad",
+      quote: "The ultra-lightweight design makes this perfect for my travels. I've used it in hotel rooms, Airbnbs, and even camping. Wi-Fi 6 connectivity is remarkably fast!",
       rating: 5,
-      avatar: "SC"
+      avatar: "DW"
     },
     {
       id: 3,
-      name: "Miguel Rodriguez",
-      role: "Security Consultant",
-      quote: "The SOS calling feature and reliable streaming options make this device essential for our security personnel in the field.",
+      name: "Sophia Martinez",
+      role: "Elementary School Teacher",
+      quote: "This projector has been a game-changer for my classroom. The children love the cute design, and the built-in apps make educational content easily accessible.",
       rating: 4,
-      avatar: "MR"
+      avatar: "SM"
+    },
+    {
+      id: 4,
+      name: "Marcus Johnson",
+      role: "Gaming Enthusiast",
+      quote: "I was skeptical about a mini projector for gaming, but connecting my PS5 was seamless. The auto keystone correction ensures a perfect image even at angles.",
+      rating: 5,
+      avatar: "MJ"
+    },
+    {
+      id: 5,
+      name: "Priya Patel",
+      role: "Small Business Owner",
+      quote: "This projector has elevated our client presentations. It's professional despite its cute design, and the versatile connectivity options work with all our devices.",
+      rating: 4,
+      avatar: "PP"
+    },
+    {
+      id: 6,
+      name: "Thomas Wilson",
+      role: "Outdoor Adventure Guide",
+      quote: "I take this projector on guided camping trips to show nature documentaries under the stars. The battery life is impressive and it's surprisingly durable!",
+      rating: 5,
+      avatar: "TW"
     }
   ];
 
@@ -55,7 +79,7 @@ const Testimonials = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-white">What Our Users Say</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#FD5201] to-[#36A8DA] mx-auto mb-4"></div>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-2">
-            Our 4G portable recorder is trusted by professionals across various industries
+            Our i&i Portable Mini Projector is loved by families, professionals, and adventurers alike
           </p>
         </div>
         

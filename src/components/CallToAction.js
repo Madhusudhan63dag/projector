@@ -33,7 +33,7 @@ const CallToAction = () => {
 
     try {
       // Send data to the backend API
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch('https://razorpaybackend-wgbh.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -217,7 +217,7 @@ const CallToAction = () => {
             </form>
           )}
           
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
             <div className="bg-[#0a1622]/90 rounded-lg p-6 border border-gray-800 hover:border-[#FD5201]/50 transition-all duration-300">
               <div className="text-[#36A8DA] bg-[#36A8DA] bg-opacity-10 p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -226,7 +226,7 @@ const CallToAction = () => {
               </div>
               <h3 className="text-xl font-bold mb-2 text-white">Phone Support</h3>
               <p className="text-gray-400">Mon-Fri: 9AM - 6PM</p>
-              <p className="font-medium mt-2 text-[#FD5201]">+1 (888) 123-4567</p>
+              <p className="font-medium mt-2 text-[#FD5201]">+91 (903) 093-8333 </p>
             </div>
             
             <div className="bg-[#0a1622]/90 rounded-lg p-6 border border-gray-800 hover:border-[#FD5201]/50 transition-all duration-300">
@@ -237,7 +237,7 @@ const CallToAction = () => {
               </div>
               <h3 className="text-xl font-bold mb-2 text-white">Email Us</h3>
               <p className="text-gray-400">We'll respond within 24 hours</p>
-              <p className="font-medium mt-2 text-[#36A8DA]">support@iandivlog.com</p>
+              <p className="font-medium mt-2 text-[#36A8DA]">israelitesshopping171@gmail.com</p>
             </div>
             
             <div className="bg-[#0a1622]/90 rounded-lg p-6 border border-gray-800 hover:border-[#FD5201]/50 transition-all duration-300">

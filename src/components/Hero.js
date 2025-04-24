@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import banner1 from '../assets/banner1.jpg';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -6,10 +7,7 @@ const Hero = () => {
   
   // Example banner images - replace with your actual image paths
   const bannerImages = [
-    "https://placehold.co/1080x600/000000/FFFFFF/png?text=Product+Image",
-    "https://placehold.co/1080x600/000000/FFFFFF/png?text=Product+Image",
-    "https://placehold.co/1080x600/000000/FFFFFF/png?text=Product+Image",
-    "https://placehold.co/1080x600/000000/FFFFFF/png?text=Product+Image",
+    banner1,
   ];
   
   // Auto slide functionality
@@ -42,7 +40,7 @@ const Hero = () => {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Banner slider container with fixed dimensions */}
-      <div className="mx-auto relative" style={{ height: '600px' }}>
+      <div className="mx-auto relative h-[40vh] md:h-[600px] ">
         
         {/* Slider track */}
         <div className="w-full h-full relative overflow-hidden">
